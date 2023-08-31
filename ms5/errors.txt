@@ -1,0 +1,11 @@
+In file included from LibApp.cpp:13:0:
+LibApp.h: In constructor ‘sdds::LibApp::LibApp(const char*)’:
+LibApp.h:27:14: warning: ‘sdds::LibApp::m_exitMenu’ will be initialized after [-Wreorder]
+         Menu m_exitMenu;
+              ^
+LibApp.h:24:14: warning:   ‘sdds::Menu sdds::LibApp::m_publicationMenu’ [-Wreorder]
+         Menu m_publicationMenu;
+              ^
+LibApp.cpp:326:5: warning:   when initialized here [-Wreorder]
+     LibApp::LibApp(const char* filename):m_mainMenu("Seneca Library Application"), m_exitMenu("Changes have been made to the data, what would you like to do?"), m_publicationMenu("Choose the type of publication:") {
+     ^
