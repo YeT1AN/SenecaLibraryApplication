@@ -1,3 +1,11 @@
+# VS Code
+*
+!*.*
+!*/
+*.dYSM
+.DS_Store
+*.vscode/tasks.json
+
 # Prerequisites
 *.d
 
